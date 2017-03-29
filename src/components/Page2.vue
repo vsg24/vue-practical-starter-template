@@ -58,21 +58,22 @@
 </template>
 
 <script>
-    export default {
-        name: 'hello',
-        data() {
-            return {
-                msg: 'This is page 2',
-            };
-        },
-    };
-
-    // Remember to wrap all your jQuery calls inside .ready()
-    $(document).ready(function () {
-        $('#clickMeBtn').click(function (e) {
-            alert('Hi!');
-        });
-    });
+export default {
+	name: 'hello',
+	data() {
+		return {
+			msg: 'This is page 2',
+		};
+	},
+	// mounted() is a function called by Vue when page is completely loaded into dom
+	// see: https://vuejs.org/v2/api/#mounted and http://stackoverflow.com/questions/40714319/how-to-call-a-vue-js-function-on-page-load for more
+	mounted() {
+	    console.log('Page loaded');
+		$('#clickMeBtn').click(function (e) {
+			alert('Hi!');
+		});
+	}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

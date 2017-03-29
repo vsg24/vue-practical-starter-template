@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-link to="/quotes" class="ui button">Next Page<i class="icon chevron right"></i></router-link>
+    <router-link to="/page2" class="ui button">Next Page<i class="icon chevron right"></i></router-link>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
@@ -22,12 +22,15 @@
 
 <script>
 export default {
-  name: 'hello',
-  data() {
-    return {
-      msg: 'Welcome to Vue - Practical Starter Template',
-    };
-  },
+	name: 'hello',
+	data() {
+		return {
+		  msg: 'Welcome to Vue - Practical Starter Template',
+		};
+	},
+	mounted() {
+	    console.log('Page loaded');
+	}
 };
 </script>
 
