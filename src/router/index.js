@@ -16,6 +16,6 @@ const routes = [
 ];
 
 export default new VueRouter({
-    //mode: 'hash', // needs [web]server support
+    //mode: 'history', // needs [web]server support
     routes: routes
 });
