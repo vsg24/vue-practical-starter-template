@@ -7,7 +7,7 @@ Unfortunately the official template is not very useful and is bare bones so I cr
 
 It provides a clean and easy to use (whatever that means) project setup that supports the SPA architecture:
 - Router by [vue-router](https://github.com/vuejs/vue-router) (Removing hash on the route is possible using history mode, checkout /src/router/index.js)
-- Ability to change head tags (including title - code not included) by [vue-head](https://github.com/ktquez/vue-head)
+- Ability to change head tags (including title) by [vue-head](https://github.com/ktquez/vue-head)
 - jQuery
 - Semantic UI (dist package)
 

@@ -10,7 +10,6 @@ import VueRouter  from 'vue-router';
 import VueHead from 'vue-head';
 
 
-// Vue.use(require('vue-semantic'));
 Vue.use(VueHead);
 Vue.use(VueRouter);
 

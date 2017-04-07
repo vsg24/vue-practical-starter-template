@@ -25,10 +25,13 @@ export default {
 	name: 'hello',
 	data() {
 		return {
-		  msg: 'Welcome to Vue - Practical Starter Template',
+			TITLE: 'Home',
+			msg: 'Welcome to Vue - Practical Starter Template',
 		};
 	},
+	head: { title() { return { inner: this.TITLE } } },
 	mounted() {
+		// this event is fired when page is component is loaded into DOM completely
 	    console.log('Page loaded');
 	}
 };

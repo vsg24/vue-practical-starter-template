@@ -62,9 +62,11 @@ export default {
 	name: 'hello',
 	data() {
 		return {
+			TITLE: 'Page 2',
 			msg: 'This is page 2',
 		};
 	},
+	head: { title() { return { inner: this.TITLE } } },
 	// mounted() is a function called by Vue when page is completely loaded into dom
 	// see: https://vuejs.org/v2/api/#mounted and http://stackoverflow.com/questions/40714319/how-to-call-a-vue-js-function-on-page-load for more
 	mounted() {
